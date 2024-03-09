@@ -852,6 +852,11 @@
   dependencies:
     "@unocss/core" "0.58.5"
 
+"@unocss/extractor-svelte@^0.58.5":
+  version "0.58.5"
+  resolved "https://registry.yarnpkg.com/@unocss/extractor-svelte/-/extractor-svelte-0.58.5.tgz#7ea263d08e4541a74303b161196edb301ef4ce52"
+  integrity sha512-jO12sGYgkF1tMgNVDcCLa88+/l1+Pc6srexZgubVwmPig/BHBuNJAgL/spcGlFRnipdZE5o5xUGq0wM8cSLdvw==
+
 "@unocss/inspector@0.58.5":
   version "0.58.5"
   resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-0.58.5.tgz#f09d82de1ae4f1c2cf2ee8198e940a636278cf2a"
