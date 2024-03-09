@@ -1,6 +1,5 @@
 <script lang="ts">
 	import 'uno.css';
-	import { onMount } from 'svelte';
 	import Icon from './Icon.svelte';
 
 	type ButtonType = 'primary' | 'secondary';
@@ -9,13 +8,14 @@
 
 	export let type: ButtonType = 'primary';
 	export let size: ButtonSize = 'medium';
-	export let icon: string;
+	export let icon: string = '';
 	export let iconPosition: ButtonIconPosition = 'left';
+	export let customClass: string = '';
 	export let onClick: () => void;
 
 	const buttonType = {
-		primary: 'bg-primary text-white',
-		secondary: 'border-1 border-gray-300 text-gray-700'
+		primary: 'bg-primary text-white font-arial',
+		secondary: 'border-1 border-gray-300 text-gray-700 font-arial'
 	};
 
 	const buttonSize = {
@@ -24,7 +24,7 @@
 		large: 'text-lg w-lg py-5'
 	};
 	// Add Uno.css classes dynamically
-	let classes = `flex items-center justify-center rounded-lg ${buttonType[type]} ${buttonSize[size]}`;
+	let classes = `flex items-center justify-center rounded-lg ${buttonType[type]} ${buttonSize[size]} ${customClass}`;
 </script>
 
 <button class={classes} on:click={onClick}>
@@ -36,4 +36,3 @@
 		<Icon {icon} />
 	{/if}
 </button>
-
