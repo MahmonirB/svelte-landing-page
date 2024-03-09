@@ -6,9 +6,7 @@
 	function onClick() {}
 </script>
 
-<section
-	class="h-full w-full flex flex-row items-center justify-end gap-10 flex-wrap sm:flex-wrap md:flex-no-wrap lg:flex-no-wrap xl:flex-no-wrap 2xl:flex-no-wrap"
->
+<section class="h-auto w-full flex flex-row items-center justify-end gap-10 flex-wrap pt-16">
 	<span class="flex flex-col flex-grow justify-between text-center items-center pl-10">
 		<Label type="title" direction="center" customClass="mb-8 max-w-3xl">{$t('home.title')}</Label>
 		<Label type="text" direction="center" customClass="mb-5 max-w-3xl"
@@ -27,9 +25,7 @@
 		</span>
 	</span>
 
-	<span
-		class="flex flex-grow sm:justify-center md:justify-center lg:justify-end xl:justify-end 2xl:justify-end"
-	>
+	<span class="flex flex-grow flex-wrap justify-end">
 		<img src="src/assets/images/hero.svg" alt="hero" />
 	</span>
 </section>
