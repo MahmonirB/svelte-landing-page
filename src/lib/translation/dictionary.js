@@ -7,6 +7,9 @@ export default {
 			CTAStartButton: 'Learn more',
 			CTAWatchButton: 'Watch video'
 		},
+		clients: {
+			title: 'You’ll be in good company'
+		},
 		price: {
 			start: 'starter',
 			pro: 'pro',

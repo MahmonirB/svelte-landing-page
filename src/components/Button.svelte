@@ -29,10 +29,10 @@
 
 <button class={classes} on:click={onClick}>
 	{#if icon && iconPosition === 'left'}
-		<Icon {icon} />
+		<Icon {icon} customClass="w-4 h-4 mx-4" />
 	{/if}
 	<slot />
 	{#if icon && iconPosition === 'right'}
-		<Icon {icon} />
+		<Icon {icon} customClass="w-4 h-4 mx-4" />
 	{/if}
 </button>
