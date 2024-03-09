@@ -1,7 +1,7 @@
 <script>
-	import Label from '../components/Label.svelte';
+	import Label from '$components/Label.svelte';
 	import { t } from '$lib/translation/i18n';
-	import Button from '../components/Button.svelte';
+	import Button from '$components/Button.svelte';
 
 	function onClick() {}
 </script>
@@ -25,7 +25,7 @@
 		</span>
 	</span>
 
-	<span class="flex flex-grow flex-wrap justify-end">
+	<span class="flex flex-grow flex-wrap justify-center 2xl:justify-end">
 		<img src="src/assets/images/hero.svg" alt="hero" />
 	</span>
 </section>
