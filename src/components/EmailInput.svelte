@@ -1,12 +1,9 @@
 <script lang="ts">
 	import Button from '$components/Button.svelte';
+	import { validateEmail } from '../utils/validateEmail';
+	import { validateEmailService } from '../routes/api/validateEmail/+server';
 	let email: string = '';
 	let isValidEmail: boolean = false;
-
-	const validateEmail = (input: string): boolean => {
-		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		return emailRegex.test(input);
-	};
 
 	const handleInputChange = (event: Event) => {
 		const target = event.target as HTMLInputElement;
@@ -14,9 +11,9 @@
 		isValidEmail = validateEmail(email);
 	};
 
-	const onClick = () => {
-		if (isValidEmail) {
-			// Subscribe logic goes here
+	const onClick = async () => {
+		const res: any = await validateEmailService({ data: { email } });
+		if (res?.body?.isValidEmail) {
 			alert('Subscribed successfully!');
 		} else {
 			alert('Please enter a valid email address.');
@@ -36,12 +33,7 @@
 		<Button type="primary" size="small" {onClick}>Subscribe</Button>
 	</span>
 	{#if !isValidEmail && email}
-		<p class="error">Please enter a valid email address.</p>
+		<p class="text-red-400 text-arial m-1">Please enter a valid email address.</p>
 	{/if}
 </span>
 
-<style>
-	.error {
-		color: red;
-	}
-</style>

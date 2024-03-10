@@ -21,8 +21,10 @@
 
 	postPricing({ data: { interval: checked ? 'monthly' : 'yearly' } })
 		.then((res) => {
-			if (res.data) data.update(() => res.data as any);
-			else {
+			if (res.data) {
+				data.update(() => res.data as any);
+			alert("Pricing data has successfully fetched!");
+		} else {
 				data.update(() => ({
 					starter: { amount: '29', unit: 'USD' },
 					pro: { amount: '199', unit: 'USD' },
@@ -31,7 +33,7 @@
 			}
 		})
 		.catch((err) => {
-			console.log({ err });
+			console.log("Fetching price data has been failed!");
 		});
 </script>
 
