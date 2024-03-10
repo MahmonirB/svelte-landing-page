@@ -9,7 +9,7 @@ const unoCSSConfig: VitePluginConfig = {
 			primary: '#1C64F2',
 			title: '#111928',
 			text: '#6B7280',
-			bg: '#E5E7EB'
+			background: '#E5E7EB'
 		},
 		fontFamily: {
 			arial: ['Arial', 'sans-serif']

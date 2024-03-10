@@ -6,8 +6,8 @@
 	function onClick() {}
 </script>
 
-<section class="h-auto w-full flex flex-row items-center justify-end gap-10 flex-wrap pt-16">
-	<span class="flex flex-col flex-grow justify-between text-center items-center pl-10">
+<section class="h-auto w-full flex flex-row items-center justify-end flex-wrap pt-16">
+	<span class="flex flex-col flex-grow justify-between text-center items-center px-8">
 		<Label type="title" direction="center" customClass="mb-8 max-w-3xl">{$t('home.title')}</Label>
 		<Label type="text" direction="center" customClass="mb-5 max-w-3xl"
 			>{$t('home.description')}</Label
