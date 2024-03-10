@@ -10,20 +10,21 @@
 	<Label type="text" direction="center" customClass="mb-5 max-w-5xl px-6"
 		>{$t('introduction.description')}</Label
 	>
-	<span class="w-full flex flex-row justify-center overflow-hidden px-4">
+
+	<div class="grid grid-flow-col px-12">
 		{#each { length: 3 } as _, index}
 			<img
 				src="src/assets/images/image_{index + 1}.svg"
-				class="object-cover gap-2 p-2 max-w-full min-w-5"
+				class="object-cover gap-2 p-2 max-w-full min-w-5 h-60"
 				alt="image{index + 1}"
 			/>
-		{/each}
-	</span>
-	<span class="w-full flex flex-row justify-center overflow-hidden px-4">
+			{/each}
+	</div>
+	<span class="grid grid-flow-col overflow-hidden px-12">
 		{#each { length: 3 } as _, index}
 			<img
 				src="src/assets/images/image_{index + 4}.svg"
-				class="object-cover gap-2 p-2 max-w-full min-w-5"
+				class="object-cover gap-2 p-2 max-w-full min-w-5 h-60"
 				alt="image{index + 3}"
 			/>
 		{/each}

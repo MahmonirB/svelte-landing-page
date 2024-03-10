@@ -5,7 +5,7 @@
 	import Icon from '$components/Icon.svelte';
 </script>
 
-<section class="w-full flex flex-col flex-grow justify-between items-left my-24 p-8">
+<section class="w-full flex flex-col flex-grow justify-between items-left my-24 p-12">
 	<Label type="heading" direction="left" customClass="mb-8 px-6">{$t('features.title')}</Label>
 	<Label type="text" direction="left" customClass="mb-5 max-w-5xl px-6"
 		>{$t('features.description')}</Label

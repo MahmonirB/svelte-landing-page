@@ -37,7 +37,7 @@
 <section
 	class="flex flex-col border w-100 {active
 		? 'border-primary h-123'
-		: 'border-background h-100'} p-8 mr-10"
+		: 'border-background h-100'} p-8 mr-10 mb-4"
 >
 	<PricingCardHeader {title} {price} link="google.com" badge={active ? 'Most Popular' : ''} />
 	<Button

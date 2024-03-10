@@ -9,7 +9,8 @@ const unoCSSConfig: VitePluginConfig = {
 			primary: '#1C64F2',
 			title: '#111928',
 			text: '#6B7280',
-			background: '#E5E7EB'
+			background: '#E5E7EB',
+			badge: '#1E429F'
 		},
 		fontFamily: {
 			arial: ['Arial', 'sans-serif']
@@ -24,6 +25,15 @@ const unoCSSConfig: VitePluginConfig = {
 			xl: '1280px',
 
 			'2xl': '1421px'
+		},
+		spacing: {
+			'72': '18rem',
+			'84': '21rem',
+			'96': '24rem',
+			'240': '60rem',
+			'400': '100rem',
+			'456': '114rem',
+			'494': '123rem',
 		}
 	},
 	content: {

@@ -42,7 +42,7 @@
 		>{$t('introduction.description')}</Label
 	>
 	<Toggle name="interval" rightLabel="yearly" leftLabel="monthly" checked={$checked} {toggle} />
-	<span class="flex flex-row items-end">
+	<span class="flex flex-row items-end justify-center flex-wrap">
 		<PricingCard
 			title={$t('pricing.starter')}
 			active={false}
