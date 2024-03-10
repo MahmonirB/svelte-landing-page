@@ -2,7 +2,7 @@
 	export let icon: string;
 	export let customClass: string = '';
 
-	const classes = customClass ?? 'ml-1 mr-1 w-4 h-4';
+	const classes = customClass ?? 'ml-1 mr-1 w-4 h-4 text-white';
 </script>
 
 {#if icon}
