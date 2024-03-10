@@ -39,6 +39,13 @@ export default {
 			start: 'starter',
 			pro: 'pro',
 			platinum: 'Platinum'
+		},
+		newsletter: {
+			title: 'Sign up for our newsletter',
+			description:
+				'Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.',
+			caption: 'We care about the protection of your data. Read our',
+			link: 'Privacy Policy.'
 		}
 	}
 };

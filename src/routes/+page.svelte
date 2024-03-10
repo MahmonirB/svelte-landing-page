@@ -1,5 +1,6 @@
 <script lang="ts">
-	import Features from './../pages/Features.svelte';
+	import Newsletter from '$pages/Newsletter.svelte';
+	import Features from '$pages/Features.svelte';
 	import Introduction from '$pages/Introduction.svelte';
 	import 'uno.css';
 	import HomePage from '$pages/HomePage.svelte';
@@ -11,4 +12,5 @@
 	<Clients />
 	<Introduction />
 	<Features />
+	<Newsletter />
 </slot>
