@@ -4,7 +4,7 @@
 	import { t } from '$lib/translation/i18n';
 </script>
 
-<section class="w-full flex flex-col flex-grow justify-between text-center items-center mb-96">
+<section class="w-full flex flex-col flex-grow justify-between text-center items-center mb-36">
 	<Label type="heading" direction="center" customClass="mb-8 px-6">{$t('newsletter.title')}</Label>
 	<Label type="text" direction="center" customClass="mb-5 max-w-3xl px-6"
 		>{$t('newsletter.description')}</Label

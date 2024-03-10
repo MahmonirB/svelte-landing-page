@@ -2,7 +2,7 @@
 	import 'uno.css';
 	import Icon from './Icon.svelte';
 
-	type ButtonType = 'primary' | 'secondary';
+	type ButtonType = 'primary' | 'secondary' | 'ghost';
 	type ButtonSize = 'small' | 'medium' | 'large';
 	type ButtonIconPosition = 'left' | 'right';
 
@@ -15,7 +15,8 @@
 
 	const buttonType = {
 		primary: 'bg-primary text-white font-arial',
-		secondary: 'border-1 border-gray-300 text-gray-700 font-arial'
+		secondary: 'border-1 border-gray-300 text-gray-700 font-arial',
+		ghost: 'border-0 text-primary font-arial'
 	};
 
 	const buttonSize = {
@@ -29,10 +30,10 @@
 
 <button class={classes} on:click={onClick}>
 	{#if icon && iconPosition === 'left'}
-		<Icon {icon} customClass="w-4 h-4 mx-4" />
+		<Icon {icon} customClass="w-4 h-4 mx-4 {buttonType[type]}" />
 	{/if}
 	<slot />
 	{#if icon && iconPosition === 'right'}
-		<Icon {icon} customClass="w-4 h-4 mx-4" />
+		<Icon {icon} customClass="w-4 h-4 mx-4 {buttonType[type]}" />
 	{/if}
 </button>

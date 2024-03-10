@@ -35,10 +35,16 @@ export default {
 					'Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to help you get started.'
 			}
 		},
-		price: {
-			start: 'starter',
+		pricing: {
+			starter: 'starter',
 			pro: 'pro',
-			platinum: 'Platinum'
+			platinum: 'Platinum',
+			link: 'Go to annual plan',
+			startButton: 'Get started',
+			toolsText: 'All tools you need to manage payments',
+			featureText: 'Get hundreds of feature updates',
+			reportText: 'Financial reconciliation and reporting',
+			chatText: '24x7 phone, chat, and email support'
 		},
 		newsletter: {
 			title: 'Sign up for our newsletter',
