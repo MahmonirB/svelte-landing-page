@@ -1,7 +1,7 @@
 <script lang="ts">
 	import 'uno.css';
 
-	type LabelType = 'title' | 'text' | 'caption';
+	type LabelType = 'title' | 'heading' | 'text' | 'caption';
 	type LabelDirection = 'center' | 'right' | 'left';
 
 	export let type: LabelType = 'text';
@@ -10,6 +10,7 @@
 
 	const labelType = {
 		title: 'font-arial leading-14 text-6xl text-title',
+		heading: 'font-arial leading-10 text-3xl text-title',
 		text: 'font-arial leading-8 text-xl text-text',
 		caption: 'font-arial leading-5 text-base text-text'
 	};
