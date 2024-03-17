@@ -11,6 +11,10 @@ Once you've forked and cloned this repo and installed dependencies with `npm ins
 npm run dev
 ```
 
+## **Update dependencies
+
+In purpose of updating dependencies, you can run `npx npm-check-updates -u`, then package.json file has dependencies with latest versions.
+
 ## **Notes**
 
 ### _Design_
